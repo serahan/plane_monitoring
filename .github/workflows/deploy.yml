@@ -22,16 +22,25 @@ jobs:
             - name: Checkout 🛎️
               uses: actions/checkout@v4
 
+            - name: List files after build
+              run: ls
+
             - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
               uses: ./.github/workflows/setup-node
+
+            - name: List files after build
+              run: ls
 
             - name: Setup Pages ⚙️
               uses: actions/configure-pages@v4
               with:
                   static_site_generator: next
 
+            - name: List files after build
+              run: ls
+
             - name: Build with Next.js 🏗️
-              run: npx next build --config next.config.ts
+              run: npx next build
 
             - name: List files after build
               run: ls
