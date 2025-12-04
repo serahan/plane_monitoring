@@ -31,13 +31,13 @@ jobs:
             - name: List files after build
               run: ls
 
-            - name: Setup Pages ⚙️
-              uses: actions/configure-pages@v4
-              with:
-                  static_site_generator: next
+            # - name: Setup Pages ⚙️
+            #   uses: actions/configure-pages@v4
+            #   with:
+            #       static_site_generator: next
 
-            - name: List files after build
-              run: ls
+            # - name: List files after build
+            #   run: ls
 
             - name: Build with Next.js 🏗️
               run: npx next build
