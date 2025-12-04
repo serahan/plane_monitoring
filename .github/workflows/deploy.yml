@@ -2,7 +2,7 @@ name: publish-to-github-pages
 on:
     push:
         branches:
-            - action-test
+            - actions-test
     workflow_dispatch:
 
 permissions:
