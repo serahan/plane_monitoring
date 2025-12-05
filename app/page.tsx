@@ -3,7 +3,7 @@ import UiComponent from "@/src/components/ui/UiComponent";
 
 export default function Home() {
     return (
-        <div>
+        <div className="w-[100vw] h-[100vh]">
             <UiComponent />
             <MapComponent />
         </div>
