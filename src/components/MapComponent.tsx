@@ -18,8 +18,9 @@ function MapComponent() {
     return (
         <Map
             mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+            style={{ width: "100%", height: "100%" }}
+            projection="globe"
             initialViewState={INITIAL_VIEW}
-            style={{ width: "100vw", height: "100vh" }}
             mapStyle={mapType}
         />
     );
